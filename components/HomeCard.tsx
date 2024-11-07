@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-interface Props {
+interface HomeCardProps {
   img: string;
   title: string;
   description: string;
@@ -16,7 +16,7 @@ const HomeCard = ({
   title,
   description,
   handleClick,
-}: Props) => {
+}: HomeCardProps) => {
   return (
     <div
       className={cn(
